@@ -7,7 +7,7 @@ def selects_all_bears_names_and_orders_in_alphabetical_order
 end
 #alive = 1
 def selects_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest
-  "select name, age from cats where alive = 1 order by age"
+  "select name, age from bears where alive = 1 order by age"
 end
 
 def selects_oldest_bear_and_returns_name_and_age
@@ -15,7 +15,7 @@ def selects_oldest_bear_and_returns_name_and_age
 end
 
 def select_youngest_bear_and_returns_name_and_age
-  "Write your SQL query here"
+  "select name, min(age) from bears"
 end
 
 def selects_most_prominent_color_and_returns_with_count
